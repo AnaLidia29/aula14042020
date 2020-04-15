@@ -1,67 +1,77 @@
-<!DOCTYPE html>
 <html>
-    <head>
-        <title>Lista</title>
-       
-    </head>
-    <style>
-        nav{
+<head>
+		<title>Lista</title>
+		<style type="text/css">
+			nav {
+				position: fixed;
+				overflow: hidden;
+				top: 0;
+				left: 0;
+				margin: 0;
+				width: 100%;
+				min-width: 1024px;
+				height: 48px;
+				
+				background-color: #1d1d1f;
+			}
+			ul {
+				list-style: none;
+			}
+			nav  a {
+				float: left;
+				left: 30%;
+				position: relative;
+				color: #fff;
+				text-align: center;
+				padding: 0px 40px;
+              	text-decoration: none;
+				font-size: 14px;
+				font-family: "Arial", sans-serif;
+                
+                
+      
+               
+			}
+			nav  a:hover {
 
-            border-top: 5px solid rgb(25, 124, 25);
-            padding: 0px;
-            margin: 0px;
-            
-        }
+                float: left;
+				left: 30%;
+				position: relative;
+				color: #fff;
+				text-align:end;
+				padding: 0px 40px;
+              	text-decoration: none;
+				font-size: 14px;
+				font-family: "Arial", sans-serif;
+				background-color: #4CAF50;
+                border-bottom:2px solid rgb(81, 138, 83);
+                top: -18;
+                height: 48px;              
+             
+                
+			}  
 
-        ul.menu,
-        .menu li,
-        .menu a {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-            text-decoration: none;
-        }
 
-        .menu ul li a {
-            padding: 20px 10px;
-            display: inline-block;
-            background-color:black;
-            color: white;
-            text-decoration: none;               
-            line-height: 45px;
-            height: 45px;                
-            float: left;
+
+		</style>
+	</head>
+	<body>
    
-
-        }
-        .menu ul li a:hover {
-            background-color: #4CAF50;
-            color: white;
-            border-bottom:2px solid rgb(81, 138, 83);
-            
-         
-        }
-
-    </style>
-    <body>
-        <div>
-            <nav class="menu">
+            <nav style="border-top: 5px solid #4CAF50;">	
                 <ul>
-                  <li>
-                    <a href="">Home</a>
-                  </li>
-                  <li>
-                    <a href="">Products</a>
-                  </li>
-                  <li>
-                    <a href="">About</a>
-                  </li>
-                  <li>
-                    <a href="">Contact</a>
-                  </li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#produtos">Products</a></li>
+                        <ul class = "drop">
+                            <li><a href="#produtos">Products 1</a></li>
+                            <li><a href="#produtos">Products 2</a></li>
+                        </ul>
+                    <li><a href="#contato">About</a></li>
+                    <li><a href="#suporte">Contact</a></li>
                 </ul>
-              </nav>
-        </div>     
-           
-    </body>
+            </nav>
+
+
+
+	
+</body>
 </html>
